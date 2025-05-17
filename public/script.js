@@ -56,7 +56,7 @@ submitButton.addEventListener('click', () => {
         day: selectedDay
     };
 
-    fetch('https://scheduler2-ffp8.onrender.com', {
+    fetch('https://scheduler2-ffp8.onrender.com/submit', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -100,7 +100,7 @@ loadComments(); // Initial load of comments
 const clearButton = document.getElementById('clearButton');
 
 clearButton.addEventListener('click', () => {
-  fetch('http://localhost:3000/clear', {
+  fetch('https://scheduler2-ffp8.onrender.com/clear', {
     method: 'POST'
   })
   .then(res => res.text())
