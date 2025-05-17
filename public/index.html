@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sandbox</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Scheduler</h1>
+
+    <div class="container">
+        <div class="column">
+            <h3>Monday</h3>
+            <button class="openButton" data-modal-target="#modal" data-day="monday">Add</button>
+            <p class="outputBox" id="monday-box">none</p>
+        </div>
+        <div class="column">
+            <h3>Tuesday</h3>
+            <button class="openButton" data-modal-target="#modal" data-day="tuesday">Add</button>
+            <p class="outputBox" id="tuesday-box">none</p>
+        </div>
+        <div class="column">
+            <h3>Wednesday</h3>
+            <button class="openButton" data-modal-target="#modal" data-day="wednesday">Add</button>
+            <p class="outputBox" id="wednesday-box">none</p>
+        </div>
+        <div class="column">
+            <h3>Thursday</h3>
+            <button class="openButton" data-modal-target="#modal" data-day="thursday">Add</button>
+            <p class="outputBox" id="thursday-box">none</p>
+        </div>
+        <div class="column">
+            <h3>Friday</h3>
+            <button class="openButton" data-modal-target="#modal" data-day="friday">Add</button>  
+            <p class="outputBox" id="friday-box">none</p>
+        </div>
+        <div class="column">
+            <h3>Saturday</h3>
+            <button class="openButton" data-modal-target="#modal" data-day="saturday">Add</button>
+            <p class="outputBox" id="saturday-box">none</p>
+        </div>
+
+        <div class="column">
+            <h3>Sunday</h3>
+            <button class="openButton" data-modal-target="#modal" data-day="sunday">Add</button>
+            <p class="outputBox" id="sunday-box">none</p>
+        </div>
+
+    </div>  
+
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Add a Comment!</div>
+            <button data-close-button class="close-button">&times;</button>
+
+        </div>
+        <div class="modal-body">
+            <label>Comments:</label>
+            <input type="text" id="userInput" name="comment" placeholder="Enter your comment">
+            <button id="submitButton">Submit</button>
+            <div id="output"></div>
+        </div>
+    </div>
+    
+    <div></div><button id="clearButton" class="openButton">Clear All</button></div>
+    <div id="overlay"></div>
+</body>
+</html>
