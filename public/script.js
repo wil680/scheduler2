@@ -56,7 +56,7 @@ submitButton.addEventListener('click', () => {
         day: selectedDay
     };
 
-    fetch('http://localhost:3000/submit', {
+    fetch('https://scheduler2-ffp8.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -76,7 +76,7 @@ submitButton.addEventListener('click', () => {
 });
 
 function loadComments() {
-    fetch('http://localhost:3000/data')
+    fetch('https://scheduler2-ffp8.onrender.com')
         .then(response => response.json())
         .then(comments => {
             for (const day in comments) {
