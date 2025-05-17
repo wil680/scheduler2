@@ -1,7 +1,7 @@
 const express = require('express');
 const { get } = require('http');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const path = require('path');
 
 // Allow your HTML, CSS, JS files to be served
